@@ -1,0 +1,28 @@
+ Essa camada é responsável por conter a lógica de negócios da aplicação,
+ onde são implementadas as funcionalidades específicas do sistema.
+
+
+ Passos:
+ - Definir os casos de uso
+ - Nomear os casos de uso de forma clara e concisa
+ - Identificar os atores envolvidos e suas responsabilidades
+ - Descrever os fluxos de eventos
+    - Cenários de execução
+ - Implementar os casos de uso na camada de regras de negócio: Cada caso de uso deve ser uma classe ou um componente que encapsula a lógica de negócios correspondente.
+ - Testar os casos de uso de forma isolada
+
+
+ EXEMPLO:
+
+ 1. Realizar uma compra de ingresso
+
+ Descrição: Este caso de uso permite que um usuário compre ingressos para um evento.
+
+ Fluxo principal:
+
+ O usuário seleciona o evento desejado.
+ O usuário escolhe a quantidade de ingressos que deseja comprar.
+ O sistema verifica a disponibilidade de ingressos.
+ O usuário fornece as informações de pagamento.
+ O sistema processa o pagamento e confirma a compra.
+ O sistema emite os ingressos para o usuário.

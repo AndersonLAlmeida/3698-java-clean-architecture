@@ -1,0 +1,2 @@
+Os gateways no pacote de aplicação são responsáveis por definir interfaces abstratas
+ou contratos para interações externas necessárias para que os casos de uso (use cases) sejam executados.

@@ -1,0 +1,2 @@
+os gateways no pacote de infraestrutura fornecem implementações concretas
+desses contratos usando tecnologias específicas de infraestrutura
