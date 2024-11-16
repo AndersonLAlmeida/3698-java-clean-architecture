@@ -35,4 +35,12 @@ public class RepositorioDeUsuarioJpa implements RepositorioDeUsuario {
 
         return usuarioList;
     }
+
+    @Override
+    public Usuario alteraUsuario(String cpf, String email) {
+        UsuarioEntity entity = repositorio.findByCpf(cpf);
+        entity.setEmail(email);
+        repositorio.save(entity);
+        return entityMapper.toDomain(entity);
+    }
 }
