@@ -10,7 +10,7 @@ import java.time.LocalDate;
 * domínio que têm vida útil longa e são distinguidos por suas características únicas.
 * */
 
-//Entidade: Classe que possui uma identidade/identificado único (algo diferencia entre dois usuario)
+//Entidade: Classe que possui uma identidade/identificado única (algo diferencia entre dois usuario)
 //Regras de domínio
 public class Usuario {
     private String cpf;
@@ -18,6 +18,7 @@ public class Usuario {
     private LocalDate nascimento;
     private String email;
     private Endereco endereco;
+
     private Integer idade;
 
     public Endereco getEndereco() {
@@ -42,8 +43,6 @@ public class Usuario {
         this.nascimento = nascimento;
         this.email = email;
     }
-
-
 
     public LocalDate getNascimento() {
         return nascimento;
@@ -75,6 +74,10 @@ public class Usuario {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public Integer getIdade() {
+        return idade;
     }
 
 }
