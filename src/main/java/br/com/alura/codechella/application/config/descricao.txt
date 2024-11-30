@@ -1,0 +1,20 @@
+Injeção de dependência (DI)
+A injeção de dependência é um padrão de projeto em que as dependências
+de um objeto são fornecidas a ele por meio de construtores, métodos de
+configuração ou até mesmo por meio de parâmetros em métodos, em vez de
+serem instanciadas dentro do próprio objeto. Isso significa que o objeto
+não é responsável por criar suas próprias dependências, mas por recebê-las de fora.
+
+
+Inversão de controle (IoC)
+A inversão de controle é um princípio de design que complementa a injeção
+de dependência. Ele sugere que a responsabilidade pela configuração e
+gerenciamento das dependências de um objeto seja invertida, ou seja,
+delegada a um componente externo (geralmente um contêiner de IoC) em vez de ser
+realizada internamente pelo próprio objeto.
+
+Em outras palavras, em vez de os objetos serem responsáveis por criar
+e gerenciar suas próprias dependências, eles delegam essa responsabilidade
+a um mecanismo externo. Isso permite uma maior flexibilidade e desacoplamento
+entre os componentes, pois as dependências podem ser facilmente substituídas
+ou configuradas sem alterar o código dos objetos dependentes.

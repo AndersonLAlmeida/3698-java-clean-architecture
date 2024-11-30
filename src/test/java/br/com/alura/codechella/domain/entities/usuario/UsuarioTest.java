@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
 
-public class UsuarioEntityTest {
+public class UsuarioTest {
 
     @Test
     void naoDeveCadastrarComCpfInvalido() {

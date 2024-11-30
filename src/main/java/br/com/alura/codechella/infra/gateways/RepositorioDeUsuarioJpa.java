@@ -7,6 +7,7 @@ import br.com.alura.codechella.infra.persistence.UsuarioRepository;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class RepositorioDeUsuarioJpa implements RepositorioDeUsuario {
 
@@ -27,13 +28,9 @@ public class RepositorioDeUsuarioJpa implements RepositorioDeUsuario {
 
     @Override
     public List<Usuario> listarTodos() {
-        List<UsuarioEntity> entityList = repositorio.findAll();
-        List<Usuario> usuarioList = new ArrayList<>();
-        for (UsuarioEntity entity : entityList) {
-            usuarioList.add(entityMapper.toDomain(entity));
-        }
-
-        return usuarioList;
+        return repositorio.findAll().stream()
+                .map(entityMapper::toDomain)
+                .collect(Collectors.toList());
     }
 
     @Override
